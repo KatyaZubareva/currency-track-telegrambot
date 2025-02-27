@@ -1,80 +1,79 @@
 # Currency Track Bot
 
-Currency Track Bot — это Telegram-бот, который позволяет отслеживать актуальные курсы криптовалют (Bitcoin и Ethereum) в реальном времени.
+Currency Track Bot is a Telegram bot that allows users to track real-time cryptocurrency exchange rates (Bitcoin and Ethereum).
 
-## 📌 Функциональность
-- `/start` — Начало работы с ботом, описание возможностей.
-- `/btc` — Узнать текущий курс Bitcoin (BTC).
-- `/eth` — Узнать текущий курс Ethereum (ETH).
-- `/help` — Справка по командам бота.
+## 📌 Features
+- `/start` — Start working with the bot and view available features.
+- `/btc` — Get the current Bitcoin (BTC) exchange rate.
+- `/eth` — Get the current Ethereum (ETH) exchange rate.
+- `/help` — Display help and available commands.
 
-## 🛠️ Технологии
-- **Язык программирования**: Java 21
-- **Фреймворк**: Spring Boot
+## 🛠️ Technologies
+- **Programming Language**: Java 21
+- **Framework**: Spring Boot
 - **API**: Telegram Bots API
-- **Сборщик проекта**: Maven
-- **Логирование**: SLF4J + Logback
-- **Упаковка и развертывание**: Docker
+- **Build Tool**: Maven
+- **Logging**: SLF4J + Logback
+- **Containerization & Deployment**: Docker
 
-## 📂 Структура проекта
+## 📂 Project Structure
 ```
 .
 ├── src
 │   ├── main
 │   │   ├── java/com/track/currencybot
-│   │   │   ├── bot          # Логика обработки команд
-│   │   │   ├── service      # Сервисы получения данных
-│   │   │   ├── exception    # Обработка ошибок
+│   │   │   ├── bot          # Command processing logic
+│   │   │   ├── service      # Data retrieval services
+│   │   │   ├── exception    # Error handling
 │   │   ├── resources
-│   │   │   ├── application.properties # Конфигурационные файлы
-├── Dockerfile               # Файл для сборки Docker-образа
-├── pom.xml                  # Конфигурация Maven
+│   │   │   ├── application.properties # Configuration files
+├── Dockerfile               # Docker build file
+├── pom.xml                  # Maven configuration
 └── README.md
 ```
 
-## 🚀 Установка и запуск
-### 1. Клонирование репозитория
+## 🚀 Installation & Running
+### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-repo/currency-track-bot.git
-cd currency-track-bot
+git clone https://github.com/your-repo/currency-track-bot.git  
+cd currency-track-bot  
 ```
 
-### 2. Настройка переменных окружения
-Создайте `.env` файл и укажите токен вашего бота:
+### 2. Set Up Environment Variables
+Create a `.env` file and specify your bot token:
 ```env
-BOT_TOKEN=your_telegram_bot_token
+BOT_TOKEN=your_telegram_bot_token  
 ```
 
-### 3. Сборка и запуск локально
-#### Сборка и запуск через Maven
+### 3. Build & Run Locally
+#### Build and Run with Maven
 ```sh
-./mvnw clean package
-java -jar target/currency-track-bot.jar
+./mvnw clean package  
+java -jar target/currency-track-bot.jar  
 ```
 
-### 4. Запуск в Docker
-#### Сборка Docker-образа
+### 4. Run in Docker
+#### Build Docker Image
 ```sh
-docker build -t currency-track-bot .
+docker build -t currency-track-bot .  
 ```
-#### Запуск контейнера
+#### Run the Container
 ```sh
-docker run -d --name currency-bot --env BOT_TOKEN=your_telegram_bot_token currency-track-bot
+docker run -d --name currency-bot --env BOT_TOKEN=your_telegram_bot_token currency-track-bot  
 ```
 
-## 🛠 Разработка
-### Запуск в режиме разработки
+## 🛠 Development
+### Run in Development Mode
 ```sh
-./mvnw spring-boot:run
+./mvnw spring-boot:run  
 ```
 
-### Логирование
-Логи можно найти в консоли или файле `logs/app.log`, если он настроен в `application.properties`.
+### Logging
+Logs can be found in the console or in `logs/app.log` if configured in `application.properties`.
 
-## 📜 Лицензия
-Этот проект распространяется под лицензией MIT.
+## 📜 License
+This project is licensed under the MIT License.
 
 ---
 
-💡 **Примечание:** Убедитесь, что ваш бот зарегистрирован в [@BotFather](https://t.me/BotFather) и у него есть токен для работы.
-
+💡 **Note:** Make sure your bot is registered with [@BotFather](https://t.me/BotFather) and has a valid token to operate.
