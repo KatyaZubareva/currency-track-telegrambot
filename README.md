@@ -2,13 +2,13 @@
 
 Currency Track Bot is a Telegram bot that allows users to track real-time cryptocurrency exchange rates (Bitcoin and Ethereum).
 
-## 📌 Features
+## Features
 - `/start` — Start working with the bot and view available features.
 - `/btc` — Get the current Bitcoin (BTC) exchange rate.
 - `/eth` — Get the current Ethereum (ETH) exchange rate.
 - `/help` — Display help and available commands.
 
-## 🛠️ Technologies
+## Technologies
 - **Programming Language**: Java 21
 - **Framework**: Spring Boot
 - **API**: Telegram Bots API
@@ -16,7 +16,7 @@ Currency Track Bot is a Telegram bot that allows users to track real-time crypto
 - **Logging**: SLF4J + Logback
 - **Containerization & Deployment**: Docker
 
-## 📂 Project Structure
+## Project Structure
 ```
 .
 ├── src
@@ -32,7 +32,7 @@ Currency Track Bot is a Telegram bot that allows users to track real-time crypto
 └── README.md
 ```
 
-## 🚀 Installation & Running
+## Installation & Running
 ### 1. Clone the Repository
 ```sh
 git clone https://github.com/your-repo/currency-track-bot.git  
@@ -62,7 +62,7 @@ docker build -t currency-track-bot .
 docker run -d --name currency-bot --env BOT_TOKEN=your_telegram_bot_token currency-track-bot  
 ```
 
-## 🛠 Development
+## Development
 ### Run in Development Mode
 ```sh
 ./mvnw spring-boot:run  
@@ -71,9 +71,9 @@ docker run -d --name currency-bot --env BOT_TOKEN=your_telegram_bot_token curren
 ### Logging
 Logs can be found in the console or in `logs/app.log` if configured in `application.properties`.
 
-## 📜 License
+## License
 This project is licensed under the MIT License.
 
 ---
 
-💡 **Note:** Make sure your bot is registered with [@BotFather](https://t.me/BotFather) and has a valid token to operate.
+ **Note:** Make sure your bot is registered with [@BotFather](https://t.me/BotFather) and has a valid token to operate.
